@@ -29,9 +29,14 @@ The OS was DamnSmallLinux with gcc-dsl-extension for compiling the code.
  
 Address decoding takes /XWR, /XRD and XA0-XA2. The logic ICs used are 74HCT138 
 and 74HCT14. When decoding read and write signals 2x 74HCT138 is needed. 
-This is the full decoding circuit for R and W.
+This is the full decoding circuit for R and W. It gives a maximum of 8 output
+and 8 input /CS signals.
 ![Address Decoding](https://github.com/spacerace/winbond-extadp/blob/master/schematics_png/addr_decode_rw_8bytes_color.png)
-It gives a maximum of 8 output /CS signals and 8 input /CS signals. 
  
+ 
+The full circuit for one 8bit output port is this, just add up to 7 more 
+74HCT273 for 64 digital outputs. 
+ 
+![8bit output port](https://github.com/spacerace/winbond-extadp/blob/master/schematics_png/74273_output_port.png)  
 
 
