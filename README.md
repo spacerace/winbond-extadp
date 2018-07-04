@@ -24,6 +24,9 @@ I tested all this on an Pentium 90 with ISA slots. I disabled everything on
 an ISA controller with a winbond chip, except for the LPT part. 
  
 The OS was DamnSmallLinux with gcc-dsl-extension for compiling the code. 
+
+# Datasheet W83877F #
+All known information is in datasheet on pages: 53, 67, 68.
  
 # Schematics #
  
